@@ -19,7 +19,8 @@ The dataset used is superstore.csv, which includes over 9,000 sales transactions
 	•	Sales & profit figures
 	•	Region, state, and city
 
- ### Data Dictionary: https://docs.google.com/document/d/1UhUyfFvQnZG2iDsy6LNNrTuezQ9wBtoAJI966IZNEpQ/edit?usp=sharing
+### Data Dictionary: 
+ https://docs.google.com/document/d/1UhUyfFvQnZG2iDsy6LNNrTuezQ9wBtoAJI966IZNEpQ/edit?usp=sharing
  
 ### Tools & Technologies
 	•	SQL (via SQLite or MySQL)
@@ -59,16 +60,17 @@ df.to_sql(‘superstore’, engine, if_exists=‘replace’, index=False)
 ```
 
 ### Analysis Tasks
-Your tasks as a data analyst include:
-	•	Compare total sales, orders, and profits per region
-	•	Determine the most profitable categories by region
-	•	Identify shipping delays or preferred ship modes
-	•	Rank customer segments by sales and profitability
-	•	Spot high-performing states or cities
-	•	Detect potential losses or underperforming areas
+   Your tasks as a data analyst include
+        -       Compare total sales, orders, and profits per region
+	- 	Determine the most profitable categories by region
+	- 	Identify shipping delays or preferred ship modes
+	-	Rank customer segments by sales and profitability
+	-	Spot high-performing states or cities
+	-	Detect potential losses or underperforming areas
 
 Each query contributes to a “final showdown matrix” that the executive team will use to evaluate which region delivered the most value in the past year.
-Sample SQL Queries
+
+### Sample SQL Queries
 <pre>
 ```sql
 SELECT Region, SUM(Sales) AS TotalSales
