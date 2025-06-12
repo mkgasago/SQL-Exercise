@@ -12,6 +12,7 @@ This project simulates a real-world data analyst role within a retail company. Y
 
 ### Dataset
 The dataset used is superstore.csv, which includes over 9,000 sales transactions from a fictional office supply company. Each row represents a customer order and contains multiple dimensions and measures including:
+
 	•	Customer & order details
 	•	Product category & sub-category
 	•	Ship mode & delivery data
@@ -39,8 +40,9 @@ pip install pandas sqlalchemy ipython-sql matplotlib seaborn
 ```
 
 	3.	Load the dataset:
- •	Option 1: Upload superstore.csv to your local SQL DB (MySQL or SQLite)
- •	Option 2 (Notebook users): Use pandas to load and push to SQLite:
+ 
+     •	Option 1: Upload superstore.csv to your local SQL DB (MySQL or SQLite)
+     •	Option 2 (Notebook users): Use pandas to load and push to SQLite:
 ```python
 import pandas as pd
 from sqlalchemy import create_engine
